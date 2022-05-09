@@ -1,11 +1,27 @@
 {
   "name": "ecommerce",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "In the project directory, you can run:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js" 
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belalsukri/Ecommerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Belalsukri/Ecommerce/issues"
+  },
+  "homepage": "https://github.com/Belalsukri/Ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }

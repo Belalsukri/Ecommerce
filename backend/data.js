@@ -1,5 +1,5 @@
 const data={
-    product:[
+    products:[
         {
             _id:'1',
             name:'nike',
@@ -7,7 +7,8 @@ const data={
             images:'/images/product-1.png',
             price:120,
             brand:'Nike',
-            rating:4.5,
+            rating:2.5,
+            countInStock:2,
             numReviews:10,
             description:'high quality product',
         },
@@ -17,6 +18,7 @@ const data={
             category:'shirts',
             images:'/images/product-1.png',
             price:110,
+            countInStock:5,
             brand:'Nike',
             rating:4.5,
             numReviews:11,
@@ -29,7 +31,8 @@ const data={
             images:'/images/p-3.png',
             price:150,
             brand:'Nike',
-            rating:4.5,
+            countInStock:20,
+            rating:3,
             numReviews:15,
             description:'high quality product',
         },
@@ -40,7 +43,8 @@ const data={
             images:'/images/product-1.png',
             price:80,
             brand:'Nike',
-            rating:4.5,
+            countInStock:521,
+            rating:1.5,
             numReviews:18,
             description:'high quality product',
         },
@@ -51,6 +55,7 @@ const data={
             images:'/images/p-2.png',
             price:100,
             brand:'Nike',
+            countInStock:0,
             rating:4.5,
             numReviews:10,
             description:'high quality product',

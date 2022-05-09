@@ -30,6 +30,7 @@ header{
   grid-area:header ;
   background-color: #203040;
 }
+
 main{
   grid-area: main;
   padding: 1rem;
@@ -54,6 +55,38 @@ a{
 a:hover{
   color: #ff8000;
 }
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li{
+  margin-top: 1rem;
+  text-decoration: none;
+  padding-left: 1rem;
+  
+}
+button{
+  color: rgb(248, 246, 246);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem rgb(188, 228, 10) solid;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button.primary{
+  background-color: #f0c040;
+}
+button.block{
+  width: 100%;
+}
+button:hover{
+  border: 0.1rem #404040 solid;
+}
 /* Header*/
 header a{
 color: aliceblue;
@@ -73,6 +106,15 @@ a.brand{
 .row.center{
   justify-content: center;
 }
+.row.top{
+  justify-content: flex-start;
+}
+.col-1{
+  flex: 1 1 25rem;
+}
+.col-2{
+  flex: 2 1 50rem;
+}
 /* images*/
 img{
   border-radius: 0.5rem;
@@ -81,13 +123,16 @@ img.medium{
   max-width: 29rem;
   width: 100%;
 }
+/* img.large{
+  width: 100%;
+} */
 
 /* card*/
 .card{
   border: 0.1rem #c0c0c0 solid; 
   background-color:#f8f8f8 ;
   border-radius: 0.5rem;
-  margin:1rem ;
+ 
 }
 .card-body{
   padding: 1rem;
@@ -102,4 +147,14 @@ img.medium{
 .rating span{
 color: #f0c040;
 margin: 0.1rem;
+}
+.rating span:last-child{
+  color: #404040;
+}
+/* alert */
+.success{
+  color: #20a020;
+}
+.error{
+  color: #a02002;
 }
